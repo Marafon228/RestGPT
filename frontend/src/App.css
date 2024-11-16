@@ -1,0 +1,70 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  margin: 0;
+  height: 100vh; /* Занять всю высоту окна браузера */
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+  background-color: #f0f2f5; /* Светлый фон для страницы */
+}
+
+.chat-container {
+  width: 100%;
+  max-width: 600px; /* Максимальная ширина чата */
+  height: 80vh; /* Высота чата */
+  display: flex;
+  flex-direction: column; /* Вертикальное направление */
+  border: 1px solid #ced4da; /* Граница чата */
+  border-radius: 8px; /* Закругление углов */
+  overflow: hidden; /* Скрыть выходящий контент */
+}
+
+.chat-window {
+  flex: 1; /* Занять все доступное пространство */
+  overflow-y: auto; /* Прокрутка при переполнении */
+  padding: 10px;
+  background-color: #ffffff; /* Белый фон для области чата */
+}
+
+.input-group {
+  border-top: 1px solid #ced4da; /* Граница сверху */
+  padding: 10px; /* Отступы для поля ввода */
+  background-color: #f8f9fa; /* Фон для поля ввода */
+}
